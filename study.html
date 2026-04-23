@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduLearn — Learn Without Limits</title>
+  <meta name="description" content="EduLearn is a subscription-based educational platform that gives you unlimited access to expert-led courses, live classes, and certifications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">E</span>
+        <span>EduLearn</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#courses">Courses</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" data-open="signin">Sign in</button>
+        <button class="btn btn-primary" data-open="signup">Get started</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">New · Spring 2026 catalog</span>
+          <h1>Learn anything. <span class="grad">Become anyone.</span></h1>
+          <p class="lead">Unlimited access to 12,000+ expert-led courses, live cohorts, and globally recognized certifications — all in one subscription.</p>
+          <form class="hero-cta" id="heroForm">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Start free trial</button>
+          </form>
+          <p class="hero-note">7-day free trial · No credit card required · Cancel anytime</p>
+
+          <div class="hero-stats">
+            <div><strong data-count="2400000">0</strong><span>Active learners</span></div>
+            <div><strong data-count="12000">0</strong><span>Courses</span></div>
+            <div><strong data-count="98">0</strong><span>% Satisfaction</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="card-floating card-1">
+            <div class="ic">📘</div>
+            <div>
+              <p class="t">Advanced Python</p>
+              <p class="s">Lesson 12 of 24</p>
+              <div class="bar"><i style="width:62%"></i></div>
+            </div>
+          </div>
+          <div class="card-floating card-2">
+            <div class="ic green">✓</div>
+            <div>
+              <p class="t">Certificate earned</p>
+              <p class="s">UI/UX Foundations</p>
+            </div>
+          </div>
+          <div class="card-floating card-3">
+            <div class="ic purple">🎓</div>
+            <div>
+              <p class="t">Live class today</p>
+              <p class="s">Data Science · 6:00 PM</p>
+            </div>
+          </div>
+          <div class="hero-orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos-title">Trusted by learners and teams at</p>
+        <div class="logos-row">
+          <span>Google</span><span>Microsoft</span><span>Stripe</span><span>Airbnb</span><span>Spotify</span><span>Notion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why EduLearn</span>
+          <h2>Everything you need to keep growing</h2>
+          <p>A complete learning experience designed by educators, engineered for results.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature reveal">
+            <div class="f-icon">📚</div>
+            <h3>Expert curriculum</h3>
+            <p>Courses crafted by industry leaders and updated continuously to match real-world demand.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="f-icon">🎥</div>
+            <h3>Live cohorts</h3>
+            <p>Join weekly live classes, ask questions in real time, and learn alongside a global community.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="f-icon">🧪</div>
+            <h3>Hands-on projects</h3>
+            <p>Apply what you learn through guided projects with instant feedback and code reviews.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="f-icon">📜</div>
+            <h3>Verified certificates</h3>
+            <p>Earn credentials recognized by 1,500+ hiring partners worldwide. Add them to your LinkedIn in one click.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="f-icon">📱</div>
+            <h3>Learn offline</h3>
+            <p>Download lessons and continue learning on the train, on a plane, or anywhere life takes you.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="f-icon">🤖</div>
+            <h3>AI study coach</h3>
+            <p>A personal tutor that explains concepts, quizzes you, and tailors a study plan for your goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section section-muted">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Popular paths</span>
+          <h2>Pick your next chapter</h2>
+          <p>From beginner basics to advanced mastery — find a path that fits where you're going.</p>
+        </div>
+        <div class="courses-grid">
+          <article class="course reveal">
+            <div class="course-cover c1">Web Development</div>
+            <div class="course-body">
+              <span class="tag">Beginner</span>
+              <h3>Full-Stack Web Bootcamp</h3>
+              <p>HTML, CSS, JavaScript, React & Node — build 10 real projects in 12 weeks.</p>
+              <div class="course-meta"><span>⭐ 4.9</span><span>· 84 lessons</span><span>· 38h</span></div>
+            </div>
+          </article>
+          <article class="course reveal">
+            <div class="course-cover c2">Data Science</div>
+            <div class="course-body">
+              <span class="tag">Intermediate</span>
+              <h3>Data Science with Python</h3>
+              <p>Master pandas, NumPy, scikit-learn and ship production-ready models.</p>
+              <div class="course-meta"><span>⭐ 4.8</span><span>· 96 lessons</span><span>· 52h</span></div>
+            </div>
+          </article>
+          <article class="course reveal">
+            <div class="course-cover c3">UI / UX Design</div>
+            <div class="course-body">
+              <span class="tag">All levels</span>
+              <h3>Designing Delightful Products</h3>
+              <p>From research to high-fidelity prototypes in Figma. Includes 6 case studies.</p>
+              <div class="course-meta"><span>⭐ 4.9</span><span>· 62 lessons</span><span>· 28h</span></div>
+            </div>
+          </article>
+          <article class="course reveal">
+            <div class="course-cover c4">Business</div>
+            <div class="course-body">
+              <span class="tag">Beginner</span>
+              <h3>Marketing & Growth Mastery</h3>
+              <p>SEO, paid ads, email and content systems — everything a modern marketer needs.</p>
+              <div class="course-meta"><span>⭐ 4.7</span><span>· 70 lessons</span><span>· 32h</span></div>
+            </div>
+          </article>
+          <article class="course reveal">
+            <div class="course-cover c5">AI & ML</div>
+            <div class="course-body">
+              <span class="tag">Advanced</span>
+              <h3>Deep Learning Specialization</h3>
+              <p>Neural networks, transformers and LLMs from theory to deployment.</p>
+              <div class="course-meta"><span>⭐ 4.9</span><span>· 110 lessons</span><span>· 64h</span></div>
+            </div>
+          </article>
+          <article class="course reveal">
+            <div class="course-cover c6">Languages</div>
+            <div class="course-body">
+              <span class="tag">All levels</span>
+              <h3>Spanish for Real Conversations</h3>
+              <p>Speak with confidence in 90 days through immersive lessons and live tutoring.</p>
+              <div class="course-meta"><span>⭐ 4.8</span><span>· 120 lessons</span><span>· 40h</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple plans. Unlimited learning.</h2>
+          <p>Choose monthly or save 20% with annual billing.</p>
+          <div class="billing-toggle">
+            <button class="active" data-billing="monthly">Monthly</button>
+            <button data-billing="yearly">Yearly · save 20%</button>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="plan reveal">
+            <h3>Starter</h3>
+            <p class="plan-sub">For curious learners just getting started.</p>
+            <div class="price"><span class="amount" data-monthly="9" data-yearly="7">$9</span><span class="per">/month</span></div>
+            <ul>
+              <li>✓ Access to 1,000+ beginner courses</li>
+              <li>✓ Community Q&amp;A</li>
+              <li>✓ Course completion badges</li>
+              <li class="muted">— Live classes</li>
+              <li class="muted">— Verified certificates</li>
+            </ul>
+            <button class="btn btn-outline w-full" data-buy="Starter" data-price-monthly="9" data-price-yearly="7">Buy Starter</button>
+          </div>
+
+          <div class="plan featured reveal">
+            <span class="badge">Most popular</span>
+            <h3>Pro</h3>
+            <p class="plan-sub">Everything you need to level up your career.</p>
+            <div class="price"><span class="amount" data-monthly="19" data-yearly="15">$19</span><span class="per">/month</span></div>
+            <ul>
+              <li>✓ Full library of 12,000+ courses</li>
+              <li>✓ Live cohorts &amp; workshops</li>
+              <li>✓ Verified certificates</li>
+              <li>✓ Hands-on projects with feedback</li>
+              <li>✓ AI study coach</li>
+            </ul>
+            <button class="btn btn-primary w-full" data-buy="Pro" data-price-monthly="19" data-price-yearly="15">Buy Pro</button>
+          </div>
+
+          <div class="plan reveal">
+            <h3>Teams</h3>
+            <p class="plan-sub">For schools, bootcamps, and growing companies.</p>
+            <div class="price"><span class="amount" data-monthly="39" data-yearly="31">$39</span><span class="per">/seat / month</span></div>
+            <ul>
+              <li>✓ Everything in Pro</li>
+              <li>✓ Admin dashboard &amp; analytics</li>
+              <li>✓ Custom learning paths</li>
+              <li>✓ SSO &amp; SCIM</li>
+              <li>✓ Dedicated success manager</li>
+            </ul>
+            <button class="btn btn-outline w-full" data-buy="Teams" data-price-monthly="39" data-price-yearly="31">Buy Teams</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section section-muted">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Loved by learners</span>
+          <h2>Stories from our community</h2>
+        </div>
+        <div class="testi-grid">
+          <figure class="testi reveal">
+            <blockquote>“EduLearn completely changed my career. I went from junior support to a senior developer role in under a year.”</blockquote>
+            <figcaption>
+              <div class="avatar a1">SA</div>
+              <div><strong>Sara Ahmed</strong><span>Software Engineer · Berlin</span></div>
+            </figcaption>
+          </figure>
+          <figure class="testi reveal">
+            <blockquote>“The live cohorts feel like a real classroom. The instructors actually care, and the community keeps me accountable.”</blockquote>
+            <figcaption>
+              <div class="avatar a2">MJ</div>
+              <div><strong>Marcus Johnson</strong><span>Data Analyst · Toronto</span></div>
+            </figcaption>
+          </figure>
+          <figure class="testi reveal">
+            <blockquote>“We trained our entire 40-person product team on EduLearn. Onboarding is half the time, retention is double.”</blockquote>
+            <figcaption>
+              <div class="avatar a3">LP</div>
+              <div><strong>Lina Park</strong><span>Head of People · Singapore</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container faq-container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal"><summary>Can I cancel my subscription anytime?<span class="chev">+</span></summary><p>Absolutely. Cancel in one click from your account settings — no calls, no questions, no hidden fees.</p></details>
+          <details class="faq-item reveal"><summary>Are the certificates recognized by employers?<span class="chev">+</span></summary><p>Yes. Our certificates are accepted by over 1,500 hiring partners and can be verified online by anyone.</p></details>
+          <details class="faq-item reveal"><summary>Do you offer student discounts?<span class="chev">+</span></summary><p>We offer 50% off for verified students. Just sign up with your school email to apply.</p></details>
+          <details class="faq-item reveal"><summary>Can I use EduLearn for my team?<span class="chev">+</span></summary><p>Yes — our Teams plan includes admin dashboards, custom learning paths, and dedicated support.</p></details>
+          <details class="faq-item reveal"><summary>Is there a free trial?<span class="chev">+</span></summary><p>Every plan starts with a free 7-day trial. No credit card required to begin.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container cta-inner reveal">
+        <h2>Start learning today.</h2>
+        <p>Join 2.4 million learners building skills that matter.</p>
+        <button class="btn btn-light" data-open="signup">Try EduLearn free for 7 days</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Auth status pill (shown when signed in) -->
+  <div class="account-pill" id="accountPill" hidden>
+    <span class="dot"></span><span id="accountEmail"></span>
+    <button id="signOut" title="Sign out">⎋</button>
+  </div>
+
+  <!-- Modal: Sign in -->
+  <div class="modal" id="modal-signin" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h2>Welcome back</h2>
+      <p class="modal-sub">Sign in to continue learning.</p>
+      <form data-form="signin">
+        <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
+        <label>Password<input type="password" name="password" required minlength="6" placeholder="••••••••" /></label>
+        <button type="submit" class="btn btn-primary w-full">Sign in</button>
+      </form>
+      <p class="modal-foot">New here? <button class="link" data-open="signup">Create an account</button></p>
+    </div>
+  </div>
+
+  <!-- Modal: Sign up -->
+  <div class="modal" id="modal-signup" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h2>Create your account</h2>
+      <p class="modal-sub">Start your 7-day free trial. No credit card needed.</p>
+      <form data-form="signup">
+        <label>Full name<input type="text" name="name" required placeholder="Jane Doe" /></label>
+        <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
+        <label>Password<input type="password" name="password" required minlength="6" placeholder="At least 6 characters" /></label>
+        <button type="submit" class="btn btn-primary w-full">Create account</button>
+      </form>
+      <p class="modal-foot">Already a member? <button class="link" data-open="signin">Sign in</button></p>
+    </div>
+  </div>
+
+  <!-- Modal: Buy / Checkout -->
+  <div class="modal" id="modal-buy" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h2>Subscribe to <span id="buyPlanName">Pro</span></h2>
+      <p class="modal-sub">You'll be charged <strong id="buyPlanPrice">$19</strong> per month. Cancel anytime.</p>
+      <form data-form="buy">
+        <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
+        <label>Cardholder name<input type="text" name="cardname" required placeholder="Name on card" /></label>
+        <label>Card number<input type="text" name="cardnumber" required maxlength="19" placeholder="1234 5678 9012 3456" inputmode="numeric" /></label>
+        <div class="row-2">
+          <label>Expiry<input type="text" name="exp" required maxlength="5" placeholder="MM/YY" /></label>
+          <label>CVC<input type="text" name="cvc" required maxlength="4" placeholder="123" inputmode="numeric" /></label>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Pay <span id="buyPayAmount">$19</span> &amp; subscribe</button>
+        <p class="secure-note">🔒 This is a demo checkout. No real charge will be made.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" hidden></div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo">
+          <span class="logo-mark">E</span>
+          <span>EduLearn</span>
+        </a>
+        <p class="footer-tag">Learn without limits.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#courses">Courses</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Help center</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 EduLearn, Inc.</span>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

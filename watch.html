@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Pulse X9 — The Smartwatch That Knows You</title>
+    <meta name="description" content="Pulse X9 — A premium smartwatch with health tracking, GPS, and a 14-day battery." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark"></span>
+          <span>PULSE<span class="brand-accent">X9</span></span>
+        </a>
+        <nav class="nav-links">
+          <a href="#features" data-i18n="nav.features">Features</a>
+          <a href="#specs" data-i18n="nav.specs">Specs</a>
+          <a href="#colors" data-i18n="nav.colors">Colors</a>
+          <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="langToggle" class="btn btn-ghost btn-sm" aria-label="Switch language">
+            <span id="langLabel">العربية</span>
+          </button>
+          <button id="cartToggle" class="btn btn-ghost btn-sm cart-btn" aria-label="Open cart">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M6 6L5 3H2"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="hero.eyebrow">New · 2026 Edition</span>
+            <h1 data-i18n-html="hero.title">The smartwatch<br/>that <span class="grad">knows you</span>.</h1>
+            <p class="lead" data-i18n="hero.lead">Track your heart, sleep, runs and recovery on a stunning AMOLED display — with a 14-day battery that won't quit on you.</p>
+            <div class="cta-row">
+              <button class="btn btn-primary add-to-cart" data-product="Pulse X9" data-price="249">
+                <span data-i18n="hero.buy">Buy Now — $249</span>
+                <svg class="arrow-ltr" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <button id="ctaWatch" class="btn btn-ghost" data-i18n="hero.watch">▶ Watch the film</button>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>14d</strong><span data-i18n="hero.stat1">Battery life</span></li>
+              <li><strong>50m</strong><span data-i18n="hero.stat2">Water resistant</span></li>
+              <li><strong>120+</strong><span data-i18n="hero.stat3">Workout modes</span></li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <div class="glow"></div>
+            <div class="watch" id="watch">
+              <div class="watch-strap top"></div>
+              <div class="watch-case">
+                <div class="watch-screen">
+                  <div class="screen-time" id="screenTime">10:24</div>
+                  <div class="screen-date" id="screenDate" data-i18n="watch.date">Wed, Apr 22</div>
+                  <div class="screen-rings">
+                    <svg viewBox="0 0 120 120">
+                      <circle cx="60" cy="60" r="50" stroke="rgba(255,255,255,.08)" stroke-width="8" fill="none"/>
+                      <circle cx="60" cy="60" r="50" stroke="url(#g1)" stroke-width="8" fill="none"
+                        stroke-dasharray="314" stroke-dashoffset="80" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                      <circle cx="60" cy="60" r="38" stroke="rgba(255,255,255,.08)" stroke-width="8" fill="none"/>
+                      <circle cx="60" cy="60" r="38" stroke="url(#g2)" stroke-width="8" fill="none"
+                        stroke-dasharray="239" stroke-dashoffset="100" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                      <defs>
+                        <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+                        <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#fb923c"/></linearGradient>
+                      </defs>
+                    </svg>
+                    <div class="bpm"><span id="bpm">72</span><small data-i18n="watch.bpm">BPM</small></div>
+                  </div>
+                </div>
+                <div class="watch-crown"></div>
+                <div class="watch-button"></div>
+              </div>
+              <div class="watch-strap bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="features.title">Built for everything you do.</h2>
+          <p class="section-sub" data-i18n="features.sub">Performance, precision, and presence — wrapped in aerospace-grade titanium.</p>
+          <div class="feature-grid">
+            <article class="feature">
+              <div class="feature-icon">❤</div>
+              <h3 data-i18n="features.f1.title">Always-on Health</h3>
+              <p data-i18n="features.f1.desc">Continuous heart rate, SpO2, ECG and skin temperature tracking — accurate to medical-grade sensors.</p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon">⚡</div>
+              <h3 data-i18n="features.f2.title">14-day Battery</h3>
+              <p data-i18n="features.f2.desc">One charge. Two weeks of use. Fast-charge to a full day in just 12 minutes.</p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon">◎</div>
+              <h3 data-i18n="features.f3.title">Dual-band GPS</h3>
+              <p data-i18n="features.f3.desc">Pinpoint accuracy in the densest cities and the deepest trails — no phone required.</p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon">◐</div>
+              <h3 data-i18n="features.f4.title">AMOLED Always-on</h3>
+              <p data-i18n="features.f4.desc">A 1.4″ retina-class display you can read in direct sunlight. Sapphire crystal protected.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLORS -->
+      <section id="colors" class="section dark">
+        <div class="container colors-grid">
+          <div>
+            <span class="eyebrow light" data-i18n="colors.eyebrow">Personalize</span>
+            <h2 class="section-title light" data-i18n="colors.title">Choose your finish.</h2>
+            <p class="section-sub light" data-i18n="colors.sub">Three premium colorways. Crafted from a single block of titanium.</p>
+            <div class="swatches" id="swatches">
+              <button class="swatch active" data-color="#0f0f12" data-name-en="Midnight Black" data-name-ar="أسود منتصف الليل" style="background:#0f0f12"></button>
+              <button class="swatch" data-color="#d6cfc4" data-name-en="Lunar Silver" data-name-ar="فضي قمري" style="background:#d6cfc4"></button>
+              <button class="swatch" data-color="#b07a4a" data-name-en="Solar Bronze" data-name-ar="برونزي شمسي" style="background:#b07a4a"></button>
+            </div>
+            <p class="color-name"><span data-i18n="colors.selected">Selected:</span> <strong id="colorName">Midnight Black</strong></p>
+            <button class="btn btn-primary add-to-cart" data-product="Pulse X9" data-price="249" data-i18n="colors.configure">Configure Yours</button>
+          </div>
+          <div class="color-preview" id="colorPreview"></div>
+        </div>
+      </section>
+
+      <!-- SPECS -->
+      <section id="specs" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="specs.title">The details matter.</h2>
+          <div class="specs-grid">
+            <div class="spec"><span data-i18n="specs.display">Display</span><strong data-i18n="specs.displayV">1.4″ AMOLED, 600 nits</strong></div>
+            <div class="spec"><span data-i18n="specs.battery">Battery</span><strong data-i18n="specs.batteryV">14 days typical use</strong></div>
+            <div class="spec"><span data-i18n="specs.water">Water</span><strong data-i18n="specs.waterV">50m / 5 ATM</strong></div>
+            <div class="spec"><span data-i18n="specs.material">Material</span><strong data-i18n="specs.materialV">Grade-5 titanium</strong></div>
+            <div class="spec"><span data-i18n="specs.connect">Connectivity</span><strong data-i18n="specs.connectV">Bluetooth 5.3, Wi-Fi, NFC</strong></div>
+            <div class="spec"><span data-i18n="specs.sensors">Sensors</span><strong data-i18n="specs.sensorsV">HR, SpO2, ECG, Skin temp, Gyro</strong></div>
+            <div class="spec"><span data-i18n="specs.os">OS</span><strong data-i18n="specs.osV">PulseOS 4 (iOS & Android)</strong></div>
+            <div class="spec"><span data-i18n="specs.weight">Weight</span><strong data-i18n="specs.weightV">38g without strap</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section id="reviews" class="section reviews">
+        <div class="container">
+          <h2 class="section-title" data-i18n="reviews.title">Loved by 200,000+ wearers.</h2>
+          <div class="review-grid">
+            <blockquote><p data-i18n="reviews.r1">"Best smartwatch I've ever owned. The battery is unreal."</p><cite data-i18n="reviews.r1c">— Maya R., Marathon Runner</cite><div class="stars">★★★★★</div></blockquote>
+            <blockquote><p data-i18n="reviews.r2">"It looks like a luxury watch but does everything my old fitness band did — and more."</p><cite data-i18n="reviews.r2c">— David K., Designer</cite><div class="stars">★★★★★</div></blockquote>
+            <blockquote><p data-i18n="reviews.r3">"The sleep tracking actually changed my routine. Worth every penny."</p><cite data-i18n="reviews.r3c">— Aisha L., Doctor</cite><div class="stars">★★★★★</div></blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="buy" class="section cta-final">
+        <div class="container cta-card">
+          <div>
+            <span class="eyebrow" data-i18n="cta.eyebrow">Free 2-day shipping · 30-day returns</span>
+            <h2 data-i18n="cta.title">Get yours today.</h2>
+            <p data-i18n="cta.sub">Limited launch pricing. Ships in 24 hours.</p>
+          </div>
+          <div class="cta-actions">
+            <div class="price"><span class="strike">$329</span><strong>$249</strong></div>
+            <button class="btn btn-primary btn-lg add-to-cart" data-product="Pulse X9" data-price="249" data-i18n="cta.add">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span data-i18n="footer.copy">© 2026 Pulse Wearables, Inc.</span>
+        <span class="muted" data-i18n="footer.tag">Designed in San Francisco. Built worldwide.</span>
+      </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+    <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+      <header class="cart-header">
+        <h3 data-i18n="cart.title">Your Cart</h3>
+        <button id="cartClose" class="cart-close" aria-label="Close cart">✕</button>
+      </header>
+      <div id="cartItems" class="cart-items"></div>
+      <div id="cartEmpty" class="cart-empty">
+        <p data-i18n="cart.empty">Your cart is empty.</p>
+      </div>
+      <footer class="cart-footer">
+        <div class="cart-total">
+          <span data-i18n="cart.total">Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <button id="checkoutBtn" class="btn btn-primary btn-lg" data-i18n="cart.checkout">Checkout</button>
+      </footer>
+    </aside>
+
+    <!-- Toast -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
