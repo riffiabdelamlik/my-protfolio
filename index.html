@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riffi Abdelmalik — Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700
+    &family=Space+Grotesk:wght@500;600;700
+    &family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo"><span class="gradient-text">Riffi</span>.dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"    data-i18n="nav.about">About</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="langBtn" class="lang-btn" aria-label="Switch language">🇩🇿 AR</button>
+      <a href="#contact" class="nav-cta" data-i18n="nav.hire">Hire Me</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="reveal">
+      <div class="badge" data-i18n="hero.badge">Available for freelance work</div>
+      <h1>
+        <span data-i18n="hero.h1a">Building </span>
+        <span class="gradient-text" data-i18n="hero.h1b">fast, beautiful</span>
+        <span data-i18n="hero.h1c"> web experiences.</span>
+      </h1>
+      <p data-i18n="hero.p">I'm Riffi Abdelmalik, a front-end developer crafting
+        accessible, high-performance interfaces with HTML, CSS, and JavaScript.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1">View Work →</a>
+        <a href="#contact"  class="btn btn-ghost"   data-i18n="hero.cta2">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <h2>
+          <span data-i18n="about.h2a">Design driven by </span>
+          <span class="gradient-text" data-i18n="about.h2b">purpose.</span>
+        </h2>
+        <p class="lead" data-i18n="about.p">I am a dedicated Frontend Developer passionate
+          about turning complex ideas into simple, beautiful digital experiences.</p>
+        <div id="skills">
+          <div class="skill-row">
+            <div class="label"><span data-i18n="skills.0">HTML5 & Semantic Markup</span><span>98%</span></div>
+            <div class="bar"><span data-w="98"></span></div>
+          </div>
+          <div class="skill-row">
+            <div class="label"><span data-i18n="skills.1">CSS3, Flexbox & Grid</span><span>95%</span></div>
+            <div class="bar"><span data-w="95"></span></div>
+          </div>
+          <div class="skill-row">
+            <div class="label"><span data-i18n="skills.2">JavaScript (ES6+)</span><span>92%</span></div>
+            <div class="bar"><span data-w="92"></span></div>
+          </div>
+          <div class="skill-row">
+            <div class="label"><span data-i18n="skills.3">Responsive UI</span><span>94%</span></div>
+            <div class="bar"><span data-w="94"></span></div>
+          </div>
+          <div class="skill-row">
+            <div class="label"><span data-i18n="skills.4">Animations & Performance</span><span>88%</span></div>
+            <div class="bar"><span data-w="88"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tools reveal">
+        <div class="tool glass"><div class="ico">⟨/⟩</div><span>HTML5</span></div>
+        <div class="tool glass"><div class="ico">✦</div><span>CSS3</span></div>
+        <div class="tool glass"><div class="ico">JS</div><span>JavaScript</span></div>
+        <div class="tool glass"><div class="ico">✿</div><span>Tailwind</span></div>
+        <div class="tool glass"><div class="ico">§</div><span>Sass</span></div>
+        <div class="tool glass"><div class="ico">⌥</div><span>Git</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>
+        <span data-i18n="projects.h2a">Featured </span>
+        <span class="gradient-text" data-i18n="projects.h2b">Work</span>
+      </h2>
+      <p data-i18n="projects.p">Click any card to explore all projects.</p>
+    </div>
+    <div class="projects" id="projectGrid"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>
+        <span data-i18n="services.h2a">What I </span>
+        <span class="gradient-text" data-i18n="services.h2b">Offer</span>
+      </h2>
+      <p data-i18n="services.p">End-to-end front-end services.</p>
+    </div>
+    <div class="services">
+      <div class="service glass reveal">
+        <div class="ico">◇</div>
+        <h3 data-i18n="services.0.title">Landing Pages</h3>
+        <p data-i18n="services.0.desc">High-converting pages with smooth animations and responsive layouts.</p>
+      </div>
+      <div class="service glass reveal">
+        <div class="ico">◉</div>
+        <h3 data-i18n="services.1.title">Multi-Page Websites</h3>
+        <p data-i18n="services.1.desc">Complete, SEO-friendly websites with great user experience across all devices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>
+        <span data-i18n="contact.h2a">Let's </span>
+        <span class="gradient-text" data-i18n="contact.h2b">Talk</span>
+      </h2>
+      <p data-i18n="contact.p">Have a project in mind? Send a message.</p>
+    </div>
+    <div class="contact-grid">
+      <form id="contactForm" class="glass reveal form" action="https://formspree.io/f/xkokqgrg" method="POST">
+        <div class="field">
+          <label data-i18n="contact.nameLbl">Name</label>
+          <input type="text" name="name" data-i18n-ph="contact.namePh" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label data-i18n="contact.emailLbl">Email</label>
+          <input type="email" name="email" data-i18n-ph="contact.emailPh" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label data-i18n="contact.msgLbl">Message</label>
+          <textarea name="message" data-i18n-ph="contact.msgPh" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit" data-i18n="contact.send">Send Message →</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+      <div class="reveal">
+        <div class="info-item glass">
+          <div class="ico">✉</div>
+          <div><small>Email</small><strong><a href="mailto:abdelmalikr498@gmail.com">abdelmalikr498@gmail.com</a></strong></div>
+        </div>
+        <div class="info-item glass">
+          <div class="ico">◎</div>
+          <div><small data-i18n="contact.locationLbl">Location</small><strong data-i18n="contact.locationVal">Algeria · Worldwide</strong></div>
+        </div>
+        <div class="info-item glass">
+          <div class="ico">⏱</div>
+          <div><small data-i18n="contact.responseLbl">Response time</small><strong data-i18n="contact.responseVal">Within 24 hours</strong></div>
+        </div>
+        <div class="info-box glass">
+          <h3 data-i18n="contact.boxTitle">Ready to start your project?</h3>
+          <p data-i18n="contact.boxP">Whether you need a landing page or a full website — I'm here to help.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <a href="#" class="logo"><span class="gradient-text">Riffi</span>.dev</a>
+    <div class="socials">
+      <a href="https://github.com/riffiabdelamlik" target="_blank">GH</a>
+      <a href="#">in</a>
+      <a href="#">𝕏</a>
+    </div>
+    <p>© <span id="year"></span> Riffi Abdelmalik. <span data-i18n="footer.crafted">Crafted with care.</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

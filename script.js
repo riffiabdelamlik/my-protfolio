@@ -1,368 +1,286 @@
-// ===== I18N =====
+/* ══════════════════════════════════
+   TRANSLATIONS
+══════════════════════════════════ */
 const translations = {
   en: {
-    'meta.title': 'Pulse X9 — The Smartwatch That Knows You',
-    'nav.features': 'Features', 'nav.specs': 'Specs', 'nav.colors': 'Colors', 'nav.reviews': 'Reviews',
-    'hero.eyebrow': 'New · 2026 Edition',
-    'hero.title': 'The smartwatch<br/>that <span class="grad">knows you</span>.',
-    'hero.lead': "Track your heart, sleep, runs and recovery on a stunning AMOLED display — with a 14-day battery that won't quit on you.",
-    'hero.buy': 'Buy Now — $249',
-    'hero.watch': '▶ Watch the film',
-    'hero.stat1': 'Battery life', 'hero.stat2': 'Water resistant', 'hero.stat3': 'Workout modes',
-    'watch.date': 'Wed, Apr 22', 'watch.bpm': 'BPM',
-    'features.title': 'Built for everything you do.',
-    'features.sub': 'Performance, precision, and presence — wrapped in aerospace-grade titanium.',
-    'features.f1.title': 'Always-on Health',
-    'features.f1.desc': 'Continuous heart rate, SpO2, ECG and skin temperature tracking — accurate to medical-grade sensors.',
-    'features.f2.title': '14-day Battery',
-    'features.f2.desc': 'One charge. Two weeks of use. Fast-charge to a full day in just 12 minutes.',
-    'features.f3.title': 'Dual-band GPS',
-    'features.f3.desc': 'Pinpoint accuracy in the densest cities and the deepest trails — no phone required.',
-    'features.f4.title': 'AMOLED Always-on',
-    'features.f4.desc': 'A 1.4″ retina-class display you can read in direct sunlight. Sapphire crystal protected.',
-    'colors.eyebrow': 'Personalize',
-    'colors.title': 'Choose your finish.',
-    'colors.sub': 'Three premium colorways. Crafted from a single block of titanium.',
-    'colors.selected': 'Selected:',
-    'colors.configure': 'Configure Yours',
-    'specs.title': 'The details matter.',
-    'specs.display': 'Display', 'specs.displayV': '1.4″ AMOLED, 600 nits',
-    'specs.battery': 'Battery', 'specs.batteryV': '14 days typical use',
-    'specs.water': 'Water', 'specs.waterV': '50m / 5 ATM',
-    'specs.material': 'Material', 'specs.materialV': 'Grade-5 titanium',
-    'specs.connect': 'Connectivity', 'specs.connectV': 'Bluetooth 5.3, Wi-Fi, NFC',
-    'specs.sensors': 'Sensors', 'specs.sensorsV': 'HR, SpO2, ECG, Skin temp, Gyro',
-    'specs.os': 'OS', 'specs.osV': 'PulseOS 4 (iOS & Android)',
-    'specs.weight': 'Weight', 'specs.weightV': '38g without strap',
-    'reviews.title': 'Loved by 200,000+ wearers.',
-    'reviews.r1': '"Best smartwatch I\'ve ever owned. The battery is unreal."',
-    'reviews.r1c': '— Maya R., Marathon Runner',
-    'reviews.r2': '"It looks like a luxury watch but does everything my old fitness band did — and more."',
-    'reviews.r2c': '— David K., Designer',
-    'reviews.r3': '"The sleep tracking actually changed my routine. Worth every penny."',
-    'reviews.r3c': '— Aisha L., Doctor',
-    'cta.eyebrow': 'Free 2-day shipping · 30-day returns',
-    'cta.title': 'Get yours today.',
-    'cta.sub': 'Limited launch pricing. Ships in 24 hours.',
-    'cta.add': 'Add to Cart',
-    'footer.copy': '© 2026 Pulse Wearables, Inc.',
-    'footer.tag': 'Designed in San Francisco. Built worldwide.',
-    'cart.title': 'Your Cart',
-    'cart.empty': 'Your cart is empty.',
-    'cart.total': 'Total',
-    'cart.checkout': 'Checkout',
-    'toast.added': 'Added to cart',
-    'toast.removed': 'Removed from cart',
-    'toast.checkout': 'Order placed! Thank you.',
-    'toast.empty': 'Your cart is empty.',
-    'toast.trailer': 'Trailer coming soon...',
-    'lang.switch': 'العربية',
+    "nav.about":"About","nav.projects":"Projects",
+    "nav.services":"Services","nav.contact":"Contact","nav.hire":"Hire Me",
+    "hero.badge":"Available for freelance work",
+    "hero.h1a":"Building ","hero.h1b":"fast, beautiful","hero.h1c":" web experiences.",
+    "hero.p":"I'm Riffi Abdelmalik, a front-end developer crafting accessible, high-performance interfaces with HTML, CSS, and JavaScript.",
+    "hero.cta1":"View Work →","hero.cta2":"Get in Touch",
+    "about.h2a":"Design driven by ","about.h2b":"purpose.",
+    "about.p":"I am a dedicated Frontend Developer passionate about turning complex ideas into simple, beautiful, and functional digital experiences.",
+    "skills.0":"HTML5 & Semantic Markup","skills.1":"CSS3, Flexbox & Grid",
+    "skills.2":"JavaScript (ES6+)","skills.3":"Responsive UI","skills.4":"Animations & Performance",
+    "projects.h2a":"Featured ","projects.h2b":"Work",
+    "projects.p":"A selection of recent front-end builds. Click any card to explore all projects.",
+    "services.h2a":"What I ","services.h2b":"Offer","services.p":"End-to-end front-end services.",
+    "services.0.title":"Landing Pages",
+    "services.0.desc":"High-converting marketing pages with smooth animations and responsive layouts.",
+    "services.1.title":"Multi-Page Websites",
+    "services.1.desc":"Complete, SEO-friendly websites with great user experience across all devices.",
+    "contact.h2a":"Let's ","contact.h2b":"Talk",
+    "contact.p":"Have a project in mind? Send a message.",
+    "contact.nameLbl":"Name","contact.namePh":"Your name",
+    "contact.emailLbl":"Email","contact.emailPh":"you@example.com",
+    "contact.msgLbl":"Message","contact.msgPh":"Tell me about your project...",
+    "contact.send":"Send Message →","contact.sending":"Sending…",
+    "contact.success":"Message sent! I'll get back to you soon.",
+    "contact.error":"Oops! Something went wrong.",
+    "contact.locationLbl":"Location","contact.locationVal":"Algeria · Worldwide",
+    "contact.responseLbl":"Response time","contact.responseVal":"Within 24 hours",
+    "contact.boxTitle":"Ready to start your project?",
+    "contact.boxP":"Whether you need a landing page or a full website — I'm here to help.",
+    "footer.crafted":"Crafted with care.",
   },
   ar: {
-    'meta.title': 'بَلس X9 — الساعة الذكية التي تعرفك',
-    'nav.features': 'المميزات', 'nav.specs': 'المواصفات', 'nav.colors': 'الألوان', 'nav.reviews': 'التقييمات',
-    'hero.eyebrow': 'جديد · إصدار 2026',
-    'hero.title': 'الساعة الذكية<br/>التي <span class="grad">تعرفك</span>.',
-    'hero.lead': 'تابع نبضات قلبك، نومك، جريك وتعافيك على شاشة AMOLED مذهلة — مع بطارية تدوم ١٤ يوماً لا تتوقف.',
-    'hero.buy': 'اشترِ الآن — ٢٤٩$',
-    'hero.watch': '▶ شاهد الفيلم',
-    'hero.stat1': 'عمر البطارية', 'hero.stat2': 'مقاومة للماء', 'hero.stat3': 'نمط تمرين',
-    'watch.date': 'الأربعاء، ٢٢ أبريل', 'watch.bpm': 'نبضة',
-    'features.title': 'مصمّمة لكل ما تفعله.',
-    'features.sub': 'أداء، دقة، وحضور — مغلّفة بتيتانيوم بدرجة الفضاء.',
-    'features.f1.title': 'صحة دائمة التشغيل',
-    'features.f1.desc': 'تتبع مستمر لمعدل ضربات القلب، الأكسجين، تخطيط القلب ودرجة حرارة الجلد — بدقة المستشعرات الطبية.',
-    'features.f2.title': 'بطارية ١٤ يوماً',
-    'features.f2.desc': 'شحنة واحدة. أسبوعان من الاستخدام. شحن سريع ليوم كامل خلال ١٢ دقيقة فقط.',
-    'features.f3.title': 'نظام GPS ثنائي النطاق',
-    'features.f3.desc': 'دقة مطلقة في أكثف المدن وأعمق المسارات — دون الحاجة للهاتف.',
-    'features.f4.title': 'شاشة AMOLED دائمة العمل',
-    'features.f4.desc': 'شاشة ١٫٤ بوصة بدقة الريتنا تقرأها تحت أشعة الشمس المباشرة. محمية بكريستال السافاير.',
-    'colors.eyebrow': 'خصّصها',
-    'colors.title': 'اختر لمستك.',
-    'colors.sub': 'ثلاث ألوان فاخرة. مصنوعة من قطعة واحدة من التيتانيوم.',
-    'colors.selected': 'المختار:',
-    'colors.configure': 'خصّص ساعتك',
-    'specs.title': 'التفاصيل تهم.',
-    'specs.display': 'الشاشة', 'specs.displayV': '١٫٤ بوصة AMOLED، ٦٠٠ شمعة',
-    'specs.battery': 'البطارية', 'specs.batteryV': '١٤ يوماً استخدام عادي',
-    'specs.water': 'الماء', 'specs.waterV': '٥٠ متر / ٥ ATM',
-    'specs.material': 'الخامة', 'specs.materialV': 'تيتانيوم درجة ٥',
-    'specs.connect': 'الاتصال', 'specs.connectV': 'بلوتوث ٥٫٣، واي فاي، NFC',
-    'specs.sensors': 'المستشعرات', 'specs.sensorsV': 'نبض، أكسجين، ECG، حرارة، جيروسكوب',
-    'specs.os': 'النظام', 'specs.osV': 'PulseOS 4 (iOS و Android)',
-    'specs.weight': 'الوزن', 'specs.weightV': '٣٨ جرام بدون السوار',
-    'reviews.title': 'يحبها أكثر من ٢٠٠٬٠٠٠ مستخدم.',
-    'reviews.r1': '«أفضل ساعة ذكية امتلكتها. البطارية لا تُصدق.»',
-    'reviews.r1c': '— مايا ر.، عدّاءة ماراثون',
-    'reviews.r2': '«تبدو كساعة فاخرة وتفعل كل ما كانت تفعله سواري الرياضي القديم — وأكثر.»',
-    'reviews.r2c': '— ديفيد ك.، مصمم',
-    'reviews.r3': '«تتبع النوم غيّر روتيني فعلاً. تستحق كل قرش.»',
-    'reviews.r3c': '— عائشة ل.، طبيبة',
-    'cta.eyebrow': 'شحن مجاني خلال يومين · إرجاع خلال ٣٠ يوم',
-    'cta.title': 'احصل عليها اليوم.',
-    'cta.sub': 'سعر إطلاق محدود. تُشحن خلال ٢٤ ساعة.',
-    'cta.add': 'أضف للسلة',
-    'footer.copy': '© ٢٠٢٦ Pulse Wearables, Inc.',
-    'footer.tag': 'مُصمَّمة في سان فرانسيسكو. مصنوعة عالمياً.',
-    'cart.title': 'سلة المشتريات',
-    'cart.empty': 'سلتك فارغة.',
-    'cart.total': 'الإجمالي',
-    'cart.checkout': 'إتمام الشراء',
-    'toast.added': 'تمت الإضافة للسلة',
-    'toast.removed': 'تم الحذف من السلة',
-    'toast.checkout': 'تم تأكيد الطلب! شكراً لك.',
-    'toast.empty': 'سلتك فارغة.',
-    'toast.trailer': 'العرض الترويجي قريباً...',
-    'lang.switch': 'English',
-  },
+    "nav.about":"عن","nav.projects":"المشاريع",
+    "nav.services":"الخدمات","nav.contact":"تواصل","nav.hire":"وظفني",
+    "hero.badge":"متاح للعمل الحر",
+    "hero.h1a":"بناء ","hero.h1b":"تجارب ويب سريعة وجميلة","hero.h1c":".",
+    "hero.p":"أنا رفي عبد المالك، مطور واجهات أمامية أصنع واجهات سريعة وسهلة الوصول بـ HTML وCSS وJavaScript.",
+    "hero.cta1":"عرض أعمالي ←","hero.cta2":"تواصل معي",
+    "about.h2a":"تصميم مدفوع ","about.h2b":"بالهدف.",
+    "about.p":"أنا مطور واجهات أمامية متحمس لتحويل الأفكار المعقدة إلى تجارب رقمية بسيطة وجميلة وعملية.",
+    "skills.0":"HTML5 والترميز الدلالي","skills.1":"CSS3 وFlexbox وGrid",
+    "skills.2":"JavaScript (ES6+)","skills.3":"واجهات متجاوبة","skills.4":"الرسوم المتحركة والأداء",
+    "projects.h2a":"أعمال ","projects.h2b":"مميزة",
+    "projects.p":"مجموعة من أحدث مشاريع الواجهات. انقر على أي بطاقة لاستعراض المشاريع.",
+    "services.h2a":"ما ","services.h2b":"أقدمه","services.p":"خدمات واجهات أمامية متكاملة.",
+    "services.0.title":"صفحات الهبوط",
+    "services.0.desc":"صفحات تسويقية عالية التحويل مع رسوم متحركة سلسة وتخطيطات متجاوبة.",
+    "services.1.title":"مواقع متعددة الصفحات",
+    "services.1.desc":"مواقع كاملة صديقة لمحركات البحث مع تجربة مستخدم ممتازة.",
+    "contact.h2a":"لنتحدث ","contact.h2b":"معًا",
+    "contact.p":"لديك مشروع في ذهنك؟ أرسل رسالة.",
+    "contact.nameLbl":"الاسم","contact.namePh":"اسمك",
+    "contact.emailLbl":"البريد الإلكتروني","contact.emailPh":"example@email.com",
+    "contact.msgLbl":"الرسالة","contact.msgPh":"أخبرني عن مشروعك...",
+    "contact.send":"إرسال الرسالة ←","contact.sending":"جارٍ الإرسال…",
+    "contact.success":"تم إرسال رسالتك! سأتواصل معك قريبًا.",
+    "contact.error":"عذرًا! حدث خطأ ما.",
+    "contact.locationLbl":"الموقع","contact.locationVal":"الجزائر · في كل مكان",
+    "contact.responseLbl":"وقت الرد","contact.responseVal":"خلال 24 ساعة",
+    "contact.boxTitle":"هل أنت مستعد لبدء مشروعك؟",
+    "contact.boxP":"سواء احتجت صفحة هبوط أو موقعًا متكاملًا — أنا هنا للمساعدة.",
+    "footer.crafted":"صُنع بعناية.",
+  }
 };
 
-let currentLang = localStorage.getItem('lang') || 'en';
+let currentLang = "en";
 
 function applyLang(lang) {
   currentLang = lang;
-  localStorage.setItem('lang', lang);
-  const dict = translations[lang];
+  const t = translations[lang];
   document.documentElement.lang = lang;
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-  document.body.classList.toggle('rtl', lang === 'ar');
+  document.documentElement.dir  = lang === "ar" ? "rtl" : "ltr";
+  document.getElementById("langBtn").textContent = lang === "en" ? "🇩🇿 AR" : "🇬🇧 EN";
 
-  document.querySelectorAll('[data-i18n]').forEach((el) => {
-    const key = el.getAttribute('data-i18n');
-    if (dict[key]) el.textContent = dict[key];
+  // Text nodes
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (t[key] !== undefined) el.textContent = t[key];
   });
-  document.querySelectorAll('[data-i18n-html]').forEach((el) => {
-    const key = el.getAttribute('data-i18n-html');
-    if (dict[key]) el.innerHTML = dict[key];
+  // Placeholder
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+    const key = el.dataset.i18nPh;
+    if (t[key] !== undefined) el.placeholder = t[key];
   });
-
-  const langLabel = document.getElementById('langLabel');
-  if (langLabel) langLabel.textContent = dict['lang.switch'];
-
-  // Update color name
-  const activeSwatch = document.querySelector('.swatch.active');
-  if (activeSwatch) {
-    const nameAttr = lang === 'ar' ? 'nameAr' : 'nameEn';
-    document.getElementById('colorName').textContent = activeSwatch.dataset[nameAttr];
-  }
-
-  renderCart();
 }
 
-document.getElementById('langToggle').addEventListener('click', () => {
-  applyLang(currentLang === 'en' ? 'ar' : 'en');
+document.getElementById("langBtn").addEventListener("click", () => {
+  applyLang(currentLang === "en" ? "ar" : "en");
 });
 
-// ===== WATCH UI =====
-const screenTime = document.getElementById('screenTime');
-function tick() {
-  const d = new Date();
-  const h = String(d.getHours()).padStart(2, '0');
-  const m = String(d.getMinutes()).padStart(2, '0');
-  if (screenTime) screenTime.textContent = `${h}:${m}`;
-}
-tick();
-setInterval(tick, 10_000);
-
-const bpmEl = document.getElementById('bpm');
-setInterval(() => {
-  if (bpmEl) bpmEl.textContent = 68 + Math.floor(Math.random() * 12);
-}, 1500);
-
-// ===== COLOR PICKER =====
-const swatches = document.querySelectorAll('.swatch');
-const colorPreview = document.getElementById('colorPreview');
-const colorName = document.getElementById('colorName');
-const watchCase = document.querySelector('.watch-case');
-
-let selectedColor = { hex: '#0f0f12', nameEn: 'Midnight Black', nameAr: 'أسود منتصف الليل' };
-
-function lighten(hex, amt) {
-  const c = hex.replace('#', '');
-  const r = Math.min(255, parseInt(c.slice(0, 2), 16) + amt);
-  const g = Math.min(255, parseInt(c.slice(2, 4), 16) + amt);
-  const b = Math.min(255, parseInt(c.slice(4, 6), 16) + amt);
-  return `rgb(${r},${g},${b})`;
-}
-
-function applySelectedColor() {
-  const color = selectedColor.hex;
-  if (colorPreview) colorPreview.style.background = `radial-gradient(circle at 30% 30%, ${lighten(color, 25)}, ${color})`;
-  if (watchCase) watchCase.style.background = `linear-gradient(160deg, ${lighten(color, 15)}, ${color})`;
-  if (colorName) colorName.textContent = currentLang === 'ar' ? selectedColor.nameAr : selectedColor.nameEn;
-}
-
-swatches.forEach((sw) => {
-  sw.addEventListener('click', () => {
-    swatches.forEach((s) => s.classList.remove('active'));
-    sw.classList.add('active');
-    selectedColor = {
-      hex: sw.dataset.color,
-      nameEn: sw.dataset.nameEn,
-      nameAr: sw.dataset.nameAr,
-    };
-    applySelectedColor();
-    // Update existing cart items to reflect chosen color
-    cart.forEach((item) => {
-      item.color = selectedColor.hex;
-      item.colorEn = selectedColor.nameEn;
-      item.colorAr = selectedColor.nameAr;
-    });
-    saveCart();
-    renderCart();
-  });
-});
-
-// ===== TOAST =====
-const toast = document.getElementById('toast');
-let toastTimer;
-function showToast(msg) {
-  if (!toast) return;
-  toast.textContent = msg;
-  toast.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove('show'), 2400);
-}
-
-// ===== CART =====
-let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-
-const cartDrawer = document.getElementById('cartDrawer');
-const cartOverlay = document.getElementById('cartOverlay');
-const cartItemsEl = document.getElementById('cartItems');
-const cartEmptyEl = document.getElementById('cartEmpty');
-const cartTotalEl = document.getElementById('cartTotal');
-const cartCountEl = document.getElementById('cartCount');
-
-function saveCart() { localStorage.setItem('cart', JSON.stringify(cart)); }
-
-function openCart() {
-  cartDrawer.classList.add('open');
-  cartOverlay.classList.add('show');
-  cartDrawer.setAttribute('aria-hidden', 'false');
-}
-function closeCart() {
-  cartDrawer.classList.remove('open');
-  cartOverlay.classList.remove('show');
-  cartDrawer.setAttribute('aria-hidden', 'true');
-}
-
-document.getElementById('cartToggle').addEventListener('click', openCart);
-document.getElementById('cartClose').addEventListener('click', closeCart);
-cartOverlay.addEventListener('click', closeCart);
-
-function addToCart(name, price) {
-  const existing = cart.find((i) => i.name === name);
-  if (existing) {
-    existing.qty += 1;
-    existing.color = selectedColor.hex;
-    existing.colorEn = selectedColor.nameEn;
-    existing.colorAr = selectedColor.nameAr;
-  } else {
-    cart.push({
-      name,
-      price: Number(price),
-      qty: 1,
-      color: selectedColor.hex,
-      colorEn: selectedColor.nameEn,
-      colorAr: selectedColor.nameAr,
-    });
+/* ══════════════════════════════════
+   PROJECT DATA
+══════════════════════════════════ */
+const categories = [
+  {
+    slug:"personal", label:"Modern Portfolio", icon:"◆",
+    tagline:"Personal portfolio projects showcasing creativity and code.",
+    image:"https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80",
+    desc:"My main portfolio designed with advanced CSS effects and smooth animations.",
+    projects:[
+      { title:"Main Portfolio v2", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" },
+      { title:"Dark Theme Portfolio", tags:["HTML","CSS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" },
+      { title:"Creative Resume Page", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80" },
+      { title:"Portfolio with Filters", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" },
+    ]
+  },
+  {
+    slug:"ui-design", label:"Landing Page", icon:"◉",
+    tagline:"High-converting & Stunning Landing Pages.",
+    image:"https://images.unsplash.com/photo-1545665277-5937489579f2?auto=format&fit=crop&w=600&q=80",
+    desc:"Foucesd on speed, UX, and conversion rates to turn visitors int customers and achieve your business goals.",
+    projects:[
+      { title:"E-Commerce", tags:["HTML","CSS"], link:"https://riffiabdelamlik.github.io/my-protfolio/watch/watch.html", image:"https://images.unsplash.com/photo-1545665277-5937489579f2?auto=format&fit=crop&w=600&q=80" },
+      { title:"Service Booking", tags:["HTML","CSS"], link:"https://riffiabdelamlik.github.io/my-protfolio/food/food.html", image:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" },
+      { title:"Ed-Teach-Platforme", tags:["HTML","CSS"], link:"https://riffiabdelamlik.github.io/my-protfolio/study/index.html", image:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" },
+      { title:"Team Members Grid", tags:["HTML","CSS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" },
+    ]
+  },
+  {
+    slug:"Corporate Solution", label:"End-To-End Comprehensive Web Development", icon:"◇",
+    tagline:"Professional Multi-Page Business Site.",
+    image:"https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=600&q=80",
+    desc:" A complete digital presence for companies, featuring service modules, team profiles, and dynamic contact sections.",
+    projects:[
+      { title:"Legal Solution", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/busnies/company.html", image:"https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=600&q=80" },
+      { title:"Consultancy Hub", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=600&q=80" },
+      { title:"Image Gallery Lightbox", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80" },
+      { title:"Dark/Light Mode Toggle", tags:["HTML","CSS","JS"], link:"https://riffiabdelamlik.github.io/my-protfolio/", image:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80" },
+    ]
   }
-  saveCart();
-  renderCart();
-  showToast(translations[currentLang]['toast.added']);
-  // pulse cart icon
-  cartCountEl.classList.remove('bump'); void cartCountEl.offsetWidth; cartCountEl.classList.add('bump');
-}
+];
 
-function removeFromCart(name) {
-  cart = cart.filter((i) => i.name !== name);
-  saveCart();
-  renderCart();
-  showToast(translations[currentLang]['toast.removed']);
-}
-
-function updateQty(name, delta) {
-  const item = cart.find((i) => i.name === name);
-  if (!item) return;
-  item.qty = Math.max(1, item.qty + delta);
-  saveCart();
-  renderCart();
-}
-
-function renderCart() {
-  const count = cart.reduce((s, i) => s + i.qty, 0);
-  const total = cart.reduce((s, i) => s + i.qty * i.price, 0);
-  cartCountEl.textContent = count;
-  cartCountEl.classList.toggle('visible', count > 0);
-  cartTotalEl.textContent = `$${total}`;
-
-  if (cart.length === 0) {
-    cartItemsEl.innerHTML = '';
-    cartEmptyEl.style.display = 'block';
-    return;
-  }
-  cartEmptyEl.style.display = 'none';
-  cartItemsEl.innerHTML = cart.map((i) => {
-    const c = i.color || '#0f0f12';
-    const cName = currentLang === 'ar' ? (i.colorAr || '') : (i.colorEn || '');
-    const thumbBg = `linear-gradient(135deg, ${lighten(c, 20)}, ${c})`;
-    return `
-    <div class="cart-item">
-      <div class="cart-item-thumb" style="background:${thumbBg}"></div>
-      <div class="cart-item-info">
-        <strong>${i.name}</strong>
-        <span class="cart-item-color"><span class="dot" style="background:${c}"></span>${cName}</span>
-        <span>$${i.price}</span>
-        <div class="qty">
-          <button data-qty="-1" data-name="${i.name}">−</button>
-          <span>${i.qty}</span>
-          <button data-qty="1" data-name="${i.name}">+</button>
+/* ══════════════════════════════════
+   RENDER / ROUTING
+══════════════════════════════════ */
+function renderHomePage() {
+  const grid = document.getElementById("projectGrid");
+  if (!grid) return;
+  grid.innerHTML = categories.map(cat => `
+    <a href="#" class="card-link reveal" onclick="showCategory('${cat.slug}');return false;">
+      <article class="card glass">
+        <div class="thumb-wrap">
+          <img class="thumb" src="${cat.image}" alt="${cat.label}" loading="lazy">
+          <div class="thumb-overlay"><span>View ${cat.projects.length} Projects →</span></div>
+          <div class="count-badge">${cat.projects.length} projects</div>
         </div>
-      </div>
-      <button class="cart-item-remove" data-remove="${i.name}" aria-label="Remove">✕</button>
+        <div class="body">
+          <span class="cat">${cat.label}</span>
+          <h3>${cat.tagline}</h3>
+          <p>${cat.desc}</p>
+          <div class="card-footer"><span>Explore all ${cat.projects.length}</span><span>→</span></div>
+        </div>
+      </article>
+    </a>
+  `).join("");
+  observeAll();
+}
+
+function showCategory(slug) {
+  const cat = categories.find(c => c.slug === slug);
+  if (!cat) return;
+  document.body.innerHTML = `
+    <div style="min-height:100vh;background:var(--bg);color:var(--text);">
+      <nav class="nav scrolled" style="position:sticky;top:0;">
+        <div class="container nav-inner">
+          <a href="index.html" class="logo"><span class="gradient-text">Riffi</span>.dev</a>
+          <a href="index.html" style="color:var(--muted);font-size:.9rem;">← Back to Projects</a>
+        </div>
+      </nav>
+      <main class="container" style="padding:4rem 1.25rem;">
+        <div style="margin-bottom:3rem;">
+          <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;">
+            <div style="width:40px;height:40px;border-radius:.7rem;background:linear-gradient(135deg,#3b82f6,#8b5cf6,#ec4899);display:grid;place-items:center;color:#fff;font-size:1.1rem;">${cat.icon}</div>
+            <span style="font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;">${cat.projects.length} Projects</span>
+          </div>
+          <h1 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:700;background:linear-gradient(135deg,#3b82f6,#8b5cf6,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent;">${cat.label}</h1>
+          <p style="color:var(--muted);margin-top:.75rem;font-size:1.05rem;">${cat.tagline}</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:1.5rem;">
+          ${cat.projects.map(p => `
+            <a href="${p.link}" target="_blank" rel="noreferrer" style="display:block;text-decoration:none;color:inherit;" class="card-link">
+              <article class="card glass">
+                <div class="thumb-wrap">
+                  <img class="thumb" src="${p.image}" alt="${p.title}" loading="lazy">
+                  <div class="thumb-overlay"><span>View Project →</span></div>
+                </div>
+                <div class="body">
+                  <h3>${p.title}</h3>
+                  <div class="tags" style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem;">
+                    ${p.tags.map(t => `<span class="tag">${t}</span>`).join("")}
+                  </div>
+                </div>
+              </article>
+            </a>
+          `).join("")}
+        </div>
+        <div style="text-align:center;margin-top:4rem;">
+          <a href="index.html#contact" class="btn btn-primary">Get in Touch →</a>
+        </div>
+      </main>
     </div>
   `;
-  }).join('');
-  cartItemsEl.querySelectorAll('[data-qty]').forEach((b) => {
-    b.addEventListener('click', () => updateQty(b.dataset.name, Number(b.dataset.qty)));
-  });
-  cartItemsEl.querySelectorAll('[data-remove]').forEach((b) => {
-    b.addEventListener('click', () => removeFromCart(b.dataset.remove));
-  });
 }
 
-document.querySelectorAll('.add-to-cart').forEach((btn) => {
-  btn.addEventListener('click', () => addToCart(btn.dataset.product, btn.dataset.price));
+/* ══════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════ */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("visible");
+    entry.target.querySelectorAll(".bar span").forEach(b => {
+      b.style.width = b.dataset.w + "%";
+    });
+  });
+}, { threshold: 0.12 });
+
+function observeAll() {
+  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+}
+
+/* ══════════════════════════════════
+   NAVBAR
+══════════════════════════════════ */
+window.addEventListener("scroll", () => {
+  document.getElementById("nav")?.classList.toggle("scrolled", window.scrollY > 50);
+}, { passive: true });
+
+const menuBtn  = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+menuBtn.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuBtn.classList.toggle("open", open);
 });
-
-document.getElementById('checkoutBtn').addEventListener('click', () => {
-  if (cart.length === 0) { showToast(translations[currentLang]['toast.empty']); return; }
-  cart = []; saveCart(); renderCart(); closeCart();
-  showToast(translations[currentLang]['toast.checkout']);
-});
-
-// ===== MISC =====
-document.getElementById('ctaWatch')?.addEventListener('click', () => showToast(translations[currentLang]['toast.trailer']));
-
-document.querySelectorAll('a[href^="#"]').forEach((a) => {
-  a.addEventListener('click', (e) => {
-    const href = a.getAttribute('href');
-    if (!href || href === '#') return;
-    const target = document.querySelector(href);
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+navLinks.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuBtn.classList.remove("open");
   });
 });
 
-const revealEls = document.querySelectorAll('.feature, .spec, .review-grid blockquote, .section-title, .cta-card');
-revealEls.forEach((el) => el.classList.add('reveal'));
-const io = new IntersectionObserver(
-  (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
-  { threshold: 0.12 }
-);
-revealEls.forEach((el) => io.observe(el));
+/* ══════════════════════════════════
+   CONTACT FORM
+══════════════════════════════════ */
+document.getElementById("contactForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const btn    = e.target.querySelector("button[type=submit]");
+  const status = document.getElementById("formStatus");
+  const t      = translations[currentLang];
+  btn.disabled = true;
+  btn.textContent = t["contact.sending"];
+  status.className = "form-status";
+  status.textContent = "";
+  try {
+    const res = await fetch(e.target.action, {
+      method:"POST", body:new FormData(e.target),
+      headers:{Accept:"application/json"}
+    });
+    if (res.ok) {
+      status.className = "form-status success";
+      status.textContent = t["contact.success"];
+      e.target.reset();
+    } else throw new Error();
+  } catch {
+    status.className = "form-status error";
+    status.textContent = t["contact.error"];
+  }
+  btn.disabled = false;
+  btn.textContent = t["contact.send"];
+  setTimeout(() => { status.textContent = ""; }, 5000);
+});
 
-// Init
-applyLang(currentLang);
-renderCart();
+/* ══════════════════════════════════
+   INIT
+══════════════════════════════════ */
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+  renderHomePage();
+  observeAll();
+  applyLang("en");
+});
